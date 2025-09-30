@@ -1,0 +1,178 @@
+2025-09-08 00:32:25.150 INFO  [background-preinit] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+2025-09-08 00:32:25.173 INFO  [main] c.h.a.a.ApiGatewayApplication - Starting ApiGatewayApplication using Java 24.0.2 with PID 98653 (/Users/MRUNALIS/Downloads/training-icc-capstone-api-team-goal-feature-mrunali_apigateway_branch/target/classes started by MRUNALIS in /Users/MRUNALIS/Downloads/training-icc-capstone-api-team-goal-feature-mrunali_apigateway_branch)
+2025-09-08 00:32:25.173 INFO  [main] c.h.a.a.ApiGatewayApplication - No active profile set, falling back to 1 default profile: "default"
+2025-09-08 00:32:25.694 INFO  [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-09-08 00:32:25.699 INFO  [main] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-09-08 00:32:25.700 INFO  [main] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-09-08 00:32:25.700 INFO  [main] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.44]
+2025-09-08 00:32:25.718 INFO  [main] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-09-08 00:32:25.718 INFO  [main] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 528 ms
+2025-09-08 00:32:25.772 WARN  [main] o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dashboardGatewayController': Injection of autowired dependencies failed
+2025-09-08 00:32:25.773 INFO  [main] o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2025-09-08 00:32:25.778 INFO  [main] o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-09-08 00:32:25.783 ERROR [main] o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dashboardGatewayController': Injection of autowired dependencies failed
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:515)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1459)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:606)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.instantiateSingleton(DefaultListableBeanFactory.java:1222)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingleton(DefaultListableBeanFactory.java:1188)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:1123)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:987)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350)
+	at com.hdfclife.api_gateway.api_gateway.ApiGatewayApplication.main(ApiGatewayApplication.java:10)
+Caused by: org.springframework.util.PlaceholderResolutionException: Could not resolve placeholder 'userDetailsService.url' in value "${userDetailsService.url}"
+	at org.springframework.util.PlaceholderResolutionException.withValue(PlaceholderResolutionException.java:81)
+	at org.springframework.util.PlaceholderParser$ParsedValue.resolve(PlaceholderParser.java:423)
+	at org.springframework.util.PlaceholderParser.replacePlaceholders(PlaceholderParser.java:128)
+	at org.springframework.util.PropertyPlaceholderHelper.parseStringValue(PropertyPlaceholderHelper.java:118)
+	at org.springframework.util.PropertyPlaceholderHelper.replacePlaceholders(PropertyPlaceholderHelper.java:114)
+	at org.springframework.core.env.AbstractPropertyResolver.doResolvePlaceholders(AbstractPropertyResolver.java:293)
+	at org.springframework.core.env.AbstractPropertyResolver.resolveRequiredPlaceholders(AbstractPropertyResolver.java:264)
+	at org.springframework.context.support.PropertySourcesPlaceholderConfigurer.lambda$processProperties$0(PropertySourcesPlaceholderConfigurer.java:186)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveEmbeddedValue(AbstractBeanFactory.java:971)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1657)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1635)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:785)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:768)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:146)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:509)
+	... 19 common frames omitted
+2025-09-08 00:33:28.670 INFO  [background-preinit] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+2025-09-08 00:33:28.689 INFO  [main] c.h.a.a.ApiGatewayApplication - Starting ApiGatewayApplication using Java 24.0.2 with PID 98675 (/Users/MRUNALIS/Downloads/training-icc-capstone-api-team-goal-feature-mrunali_apigateway_branch/target/classes started by MRUNALIS in /Users/MRUNALIS/Downloads/training-icc-capstone-api-team-goal-feature-mrunali_apigateway_branch)
+2025-09-08 00:33:28.689 INFO  [main] c.h.a.a.ApiGatewayApplication - No active profile set, falling back to 1 default profile: "default"
+2025-09-08 00:33:29.214 INFO  [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-09-08 00:33:29.219 INFO  [main] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-09-08 00:33:29.220 INFO  [main] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-09-08 00:33:29.220 INFO  [main] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.44]
+2025-09-08 00:33:29.236 INFO  [main] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-09-08 00:33:29.237 INFO  [main] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 532 ms
+2025-09-08 00:33:29.490 WARN  [main] o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 70557a25-e5fd-4da0-9fe5-2c536ad2bc56
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-09-08 00:33:29.492 INFO  [main] o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-09-08 00:33:29.673 INFO  [main] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-09-08 00:33:29.682 INFO  [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-09-08 00:33:29.686 INFO  [main] c.h.a.a.ApiGatewayApplication - Started ApiGatewayApplication in 1.213 seconds (process running for 1.371)
+2025-09-08 01:02:40.257 INFO  [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-09-08 01:02:40.265 INFO  [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-09-08 11:08:32.671 INFO  [background-preinit] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+2025-09-08 11:08:32.693 INFO  [main] c.h.a.a.ApiGatewayApplication - Starting ApiGatewayApplication using Java 24.0.2 with PID 3923 (/Users/MRUNALIS/Downloads/training-icc-capstone-api-team-goal-feature-mrunali_apigateway_branch/target/classes started by MRUNALIS in /Users/MRUNALIS/Downloads/training-icc-capstone-api-team-goal-feature-mrunali_apigateway_branch)
+2025-09-08 11:08:32.693 INFO  [main] c.h.a.a.ApiGatewayApplication - No active profile set, falling back to 1 default profile: "default"
+2025-09-08 11:08:33.218 INFO  [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-09-08 11:08:33.223 INFO  [main] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-09-08 11:08:33.224 INFO  [main] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-09-08 11:08:33.224 INFO  [main] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.44]
+2025-09-08 11:08:33.242 INFO  [main] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-09-08 11:08:33.243 INFO  [main] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 529 ms
+2025-09-08 11:08:33.502 WARN  [main] o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 42021fac-c12d-49e1-8963-78d279d8d1ce
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-09-08 11:08:33.505 INFO  [main] o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-09-08 11:08:33.675 INFO  [main] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-09-08 11:08:33.683 INFO  [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-09-08 11:08:33.687 INFO  [main] c.h.a.a.ApiGatewayApplication - Started ApiGatewayApplication in 1.221 seconds (process running for 1.367)
+2025-09-08 13:41:11.041 INFO  [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-09-08 13:41:11.041 INFO  [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-09-08 13:41:11.043 INFO  [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2025-09-08 13:41:11.117 INFO  [http-nio-8080-exec-1] c.h.a.a.controller.GatewayController - Gateway has validated and is now forwarding login request for user: user
+2025-09-08 13:41:43.818 INFO  [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-09-08 13:41:43.824 INFO  [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-09-08 15:40:35.302 INFO  [background-preinit] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+2025-09-08 15:40:35.317 INFO  [main] c.h.a.a.ApiGatewayApplication - Starting ApiGatewayApplication using Java 24.0.2 with PID 11129 (/Users/MRUNALIS/Downloads/training-icc-capstone-api-team-goal-feature-mrunali_apigateway_branch/target/classes started by MRUNALIS in /Users/MRUNALIS/Downloads/training-icc-capstone-api-team-goal-feature-mrunali_apigateway_branch)
+2025-09-08 15:40:35.318 INFO  [main] c.h.a.a.ApiGatewayApplication - No active profile set, falling back to 1 default profile: "default"
+2025-09-08 15:40:35.848 INFO  [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-09-08 15:40:35.853 INFO  [main] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-09-08 15:40:35.854 INFO  [main] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-09-08 15:40:35.854 INFO  [main] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.44]
+2025-09-08 15:40:35.870 INFO  [main] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-09-08 15:40:35.871 INFO  [main] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 537 ms
+2025-09-08 15:40:36.125 WARN  [main] o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 28022124-d630-49fe-b42a-961b3a64b9d9
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-09-08 15:40:36.129 INFO  [main] o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-09-08 15:40:36.303 INFO  [main] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-09-08 15:40:36.311 INFO  [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-09-08 15:40:36.315 INFO  [main] c.h.a.a.ApiGatewayApplication - Started ApiGatewayApplication in 1.231 seconds (process running for 1.387)
+2025-09-08 15:41:08.034 INFO  [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-09-08 15:41:08.034 INFO  [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-09-08 15:41:08.037 INFO  [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2025-09-08 15:41:08.109 INFO  [http-nio-8080-exec-1] c.h.a.a.controller.GatewayController - Gateway has validated and is now forwarding login request for user: user
+2025-09-08 15:47:39.140 INFO  [http-nio-8080-exec-3] c.h.a.a.controller.GatewayController - Gateway has validated and is now forwarding login request for user: user
+2025-09-08 15:48:06.320 INFO  [http-nio-8080-exec-4] c.h.a.a.controller.GatewayController - Gateway forwarding logout request.
+2025-09-08 15:50:25.666 INFO  [http-nio-8080-exec-6] c.h.a.a.controller.GatewayController - Gateway has validated and is now forwarding login request for user: user
+2025-09-08 15:50:29.723 INFO  [http-nio-8080-exec-7] c.h.a.a.controller.GatewayController - Gateway forwarding logout request.
+2025-09-08 15:50:34.861 WARN  [http-nio-8080-exec-8] o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MissingRequestHeaderException: Required request header 'Authorization' for method parameter type String is not present]
+2025-09-08 15:50:39.556 INFO  [http-nio-8080-exec-9] c.h.a.a.controller.GatewayController - Gateway forwarding logout request.
+2025-09-08 15:56:05.923 INFO  [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-09-08 15:56:06.934 INFO  [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-09-08 16:56:14.097 INFO  [background-preinit] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+2025-09-08 16:56:14.112 INFO  [main] c.h.a.a.ApiGatewayApplication - Starting ApiGatewayApplication using Java 24.0.2 with PID 13610 (/Users/MRUNALIS/Downloads/training-icc-capstone-api-team-goal-feature-mrunali_apigateway_branch/target/classes started by MRUNALIS in /Users/MRUNALIS/Downloads/training-icc-capstone-api-team-goal-feature-mrunali_apigateway_branch)
+2025-09-08 16:56:14.112 INFO  [main] c.h.a.a.ApiGatewayApplication - No active profile set, falling back to 1 default profile: "default"
+2025-09-08 16:56:14.604 INFO  [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-09-08 16:56:14.608 INFO  [main] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-09-08 16:56:14.609 INFO  [main] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-09-08 16:56:14.609 INFO  [main] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.44]
+2025-09-08 16:56:14.626 INFO  [main] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-09-08 16:56:14.626 INFO  [main] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 497 ms
+2025-09-08 16:56:14.878 WARN  [main] o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 8e00e3d1-8c09-4b10-954d-a4ad8c09dd02
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-09-08 16:56:14.880 INFO  [main] o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-09-08 16:56:15.052 INFO  [main] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-09-08 16:56:15.061 INFO  [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-09-08 16:56:15.065 INFO  [main] c.h.a.a.ApiGatewayApplication - Started ApiGatewayApplication in 1.161 seconds (process running for 1.29)
+2025-09-08 16:57:46.912 INFO  [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-09-08 16:57:46.920 INFO  [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-09-08 23:06:04.805 INFO  [background-preinit] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+2025-09-08 23:06:04.824 INFO  [main] c.h.a.a.ApiGatewayApplication - Starting ApiGatewayApplication using Java 24.0.2 with PID 16197 (/Users/MRUNALIS/Downloads/training-icc-capstone-api-team-goal-feature-mrunali_apigateway_branch/target/classes started by MRUNALIS in /Users/MRUNALIS/Downloads/training-icc-capstone-api-team-goal-feature-mrunali_apigateway_branch)
+2025-09-08 23:06:04.824 INFO  [main] c.h.a.a.ApiGatewayApplication - No active profile set, falling back to 1 default profile: "default"
+2025-09-08 23:06:05.322 INFO  [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-09-08 23:06:05.327 INFO  [main] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-09-08 23:06:05.327 INFO  [main] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-09-08 23:06:05.327 INFO  [main] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.44]
+2025-09-08 23:06:05.342 INFO  [main] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-09-08 23:06:05.343 INFO  [main] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 503 ms
+2025-09-08 23:06:05.589 WARN  [main] o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: d8fcd61c-8999-44b0-ac36-8d66b526e029
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-09-08 23:06:05.591 INFO  [main] o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-09-08 23:06:05.753 INFO  [main] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-09-08 23:06:05.761 INFO  [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-09-08 23:06:05.765 INFO  [main] c.h.a.a.ApiGatewayApplication - Started ApiGatewayApplication in 1.153 seconds (process running for 1.283)
+2025-09-08 23:06:20.739 INFO  [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-09-08 23:06:20.740 INFO  [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-09-08 23:06:20.740 INFO  [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2025-09-08 23:06:20.802 INFO  [http-nio-8080-exec-1] c.h.a.a.controller.GatewayController - Gateway has validated and is now forwarding login request for user: user
+2025-09-08 23:06:31.635 INFO  [http-nio-8080-exec-2] c.h.a.a.controller.GatewayController - Gateway forwarding logout request.
+2025-09-08 23:06:37.059 INFO  [http-nio-8080-exec-3] c.h.a.a.controller.GatewayController - Gateway forwarding logout request.
+2025-09-08 23:48:35.118 INFO  [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-09-08 23:48:35.125 INFO  [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete

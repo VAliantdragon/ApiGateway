@@ -1,0 +1,98 @@
+2025-09-10 11:54:11.913 INFO  [background-preinit] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+2025-09-10 11:54:11.933 INFO  [main] c.h.a.a.ApiGatewayApplication - Starting ApiGatewayApplication using Java 24.0.2 with PID 49917 (/Users/MRUNALIS/Downloads/training-icc-capstone-api-team-goal-feature-mrunali_apigateway_branch/target/classes started by MRUNALIS in /Users/MRUNALIS/Downloads/training-icc-capstone-api-team-goal-feature-mrunali_apigateway_branch)
+2025-09-10 11:54:11.935 INFO  [main] c.h.a.a.ApiGatewayApplication - No active profile set, falling back to 1 default profile: "default"
+2025-09-10 11:54:12.580 INFO  [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-09-10 11:54:12.585 INFO  [main] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-09-10 11:54:12.585 INFO  [main] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-09-10 11:54:12.585 INFO  [main] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.44]
+2025-09-10 11:54:12.603 INFO  [main] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-09-10 11:54:12.603 INFO  [main] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 639 ms
+2025-09-10 11:54:12.904 WARN  [main] o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 56938e47-9f40-46bc-8354-63a1bc77eafb
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-09-10 11:54:12.906 INFO  [main] o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-09-10 11:54:13.140 INFO  [main] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-09-10 11:54:13.147 INFO  [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-09-10 11:54:13.153 INFO  [main] c.h.a.a.ApiGatewayApplication - Started ApiGatewayApplication in 1.483 seconds (process running for 1.622)
+2025-09-10 11:54:59.156 INFO  [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-09-10 11:54:59.157 INFO  [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-09-10 11:54:59.159 INFO  [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2025-09-10 11:54:59.230 INFO  [http-nio-8080-exec-1] c.h.a.a.controller.GatewayController - Gateway has validated and is now forwarding login request for user: admin
+2025-09-10 11:57:32.321 INFO  [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-09-10 11:57:33.336 INFO  [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-09-10 11:57:34.268 INFO  [background-preinit] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+2025-09-10 11:57:34.285 INFO  [main] c.h.a.a.ApiGatewayApplication - Starting ApiGatewayApplication using Java 24.0.2 with PID 50020 (/Users/MRUNALIS/Downloads/training-icc-capstone-api-team-goal-feature-mrunali_apigateway_branch/target/classes started by MRUNALIS in /Users/MRUNALIS/Downloads/training-icc-capstone-api-team-goal-feature-mrunali_apigateway_branch)
+2025-09-10 11:57:34.285 INFO  [main] c.h.a.a.ApiGatewayApplication - No active profile set, falling back to 1 default profile: "default"
+2025-09-10 11:57:34.835 INFO  [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-09-10 11:57:34.839 INFO  [main] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-09-10 11:57:34.840 INFO  [main] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-09-10 11:57:34.840 INFO  [main] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.44]
+2025-09-10 11:57:34.860 INFO  [main] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-09-10 11:57:34.860 INFO  [main] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 557 ms
+2025-09-10 11:57:35.159 WARN  [main] o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 9f26279e-39b3-4e94-89f0-929943c30906
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-09-10 11:57:35.162 INFO  [main] o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-09-10 11:57:35.395 INFO  [main] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-09-10 11:57:35.403 INFO  [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-09-10 11:57:35.408 INFO  [main] c.h.a.a.ApiGatewayApplication - Started ApiGatewayApplication in 1.342 seconds (process running for 1.481)
+2025-09-10 12:11:17.690 INFO  [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-09-10 12:11:17.698 INFO  [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-09-10 16:22:53.606 INFO  [background-preinit] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+2025-09-10 16:22:53.623 INFO  [main] c.h.a.a.ApiGatewayApplication - Starting ApiGatewayApplication using Java 24.0.2 with PID 56518 (/Users/MRUNALIS/Downloads/training-icc-capstone-api-team-goal-feature-mrunali_apigateway_branch/target/classes started by MRUNALIS in /Users/MRUNALIS/Downloads/training-icc-capstone-api-team-goal-feature-mrunali_apigateway_branch)
+2025-09-10 16:22:53.623 INFO  [main] c.h.a.a.ApiGatewayApplication - No active profile set, falling back to 1 default profile: "default"
+2025-09-10 16:22:54.173 INFO  [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-09-10 16:22:54.178 INFO  [main] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-09-10 16:22:54.179 INFO  [main] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-09-10 16:22:54.179 INFO  [main] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.44]
+2025-09-10 16:22:54.198 INFO  [main] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-09-10 16:22:54.199 INFO  [main] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 561 ms
+2025-09-10 16:22:54.510 WARN  [main] o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: fb5e093a-85bf-4918-9ae6-1c1e60dff8cb
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-09-10 16:22:54.513 INFO  [main] o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-09-10 16:22:54.735 INFO  [main] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-09-10 16:22:54.745 INFO  [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-09-10 16:22:54.751 INFO  [main] c.h.a.a.ApiGatewayApplication - Started ApiGatewayApplication in 1.331 seconds (process running for 1.524)
+2025-09-10 16:33:56.015 INFO  [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-09-10 16:33:56.016 INFO  [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-09-10 16:33:56.018 INFO  [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2025-09-10 16:33:56.087 INFO  [http-nio-8080-exec-1] c.h.a.a.controller.GatewayController - Gateway has validated and is now forwarding login request for user: admin
+2025-09-10 16:33:56.104 ERROR [http-nio-8080-exec-1] c.h.a.a.controller.GatewayController - Network error connecting to auth-service: I/O error on POST request for "http://localhost:8082/api/internal/auth/login": Connection refused
+2025-09-10 16:33:56.105 WARN  [http-nio-8080-exec-1] c.h.a.a.controller.GatewayController - Rate limit exceeded for login attempt by user: admin. Cause: I/O error on POST request for "http://localhost:8082/api/internal/auth/login": Connection refused
+2025-09-10 16:35:34.430 INFO  [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-09-10 16:35:34.435 INFO  [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-09-10 16:35:35.760 INFO  [background-preinit] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+2025-09-10 16:35:35.775 INFO  [main] c.h.a.a.ApiGatewayApplication - Starting ApiGatewayApplication using Java 24.0.2 with PID 57003 (/Users/MRUNALIS/Downloads/training-icc-capstone-api-team-goal-feature-mrunali_apigateway_branch/target/classes started by MRUNALIS in /Users/MRUNALIS/Downloads/training-icc-capstone-api-team-goal-feature-mrunali_apigateway_branch)
+2025-09-10 16:35:35.776 INFO  [main] c.h.a.a.ApiGatewayApplication - No active profile set, falling back to 1 default profile: "default"
+2025-09-10 16:35:36.300 INFO  [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-09-10 16:35:36.305 INFO  [main] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-09-10 16:35:36.305 INFO  [main] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-09-10 16:35:36.305 INFO  [main] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.44]
+2025-09-10 16:35:36.322 INFO  [main] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-09-10 16:35:36.322 INFO  [main] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 528 ms
+2025-09-10 16:35:36.603 WARN  [main] o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 752fc705-c9be-4356-9a96-bb9e2133e521
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-09-10 16:35:36.605 INFO  [main] o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-09-10 16:35:36.842 INFO  [main] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-09-10 16:35:36.850 INFO  [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-09-10 16:35:36.855 INFO  [main] c.h.a.a.ApiGatewayApplication - Started ApiGatewayApplication in 1.287 seconds (process running for 1.424)
+2025-09-10 16:35:50.007 INFO  [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-09-10 16:35:50.007 INFO  [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-09-10 16:35:50.008 INFO  [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-09-10 16:35:50.077 INFO  [http-nio-8080-exec-1] c.h.a.a.controller.GatewayController - Gateway has validated and is now forwarding login request for user: admin
+2025-09-10 16:35:50.092 ERROR [http-nio-8080-exec-1] c.h.a.a.controller.GatewayController - Network error connecting to auth-service: I/O error on POST request for "http://localhost:8082/api/internal/auth/login": Connection refused
+2025-09-10 16:35:50.093 ERROR [http-nio-8080-exec-1] c.h.a.a.controller.GatewayController - Circuit breaker is open for auth-service. Login blocked for user: admin. Failure: I/O error on POST request for "http://localhost:8082/api/internal/auth/login": Connection refused
